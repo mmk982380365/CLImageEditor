@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F26F2AA24284BC100F57F11 /* CLMosaicTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F26F2A924284BC100F57F11 /* CLMosaicTool.m */; };
+		4F26F2AD24284FEE00F57F11 /* CLMosaicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F26F2AC24284FEE00F57F11 /* CLMosaicView.m */; };
 		AD1D2C6B1897538900752339 /* CLGPUImageVignetteFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1D2C6A1897538900752339 /* CLGPUImageVignetteFilter.m */; };
 		AD29BB5D18EA471A0084D3D6 /* CLEmoticonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AD29BB5C18EA471A0084D3D6 /* CLEmoticonTool.m */; };
 		AD359C321954FB4D00B763CF /* CLSplashTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AD359C311954FB4D00B763CF /* CLSplashTool.m */; };
@@ -67,6 +69,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F26F2A824284BC100F57F11 /* CLMosaicTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLMosaicTool.h; sourceTree = "<group>"; };
+		4F26F2A924284BC100F57F11 /* CLMosaicTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLMosaicTool.m; sourceTree = "<group>"; };
+		4F26F2AB24284FEE00F57F11 /* CLMosaicView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLMosaicView.h; sourceTree = "<group>"; };
+		4F26F2AC24284FEE00F57F11 /* CLMosaicView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLMosaicView.m; sourceTree = "<group>"; };
 		AD13E67C1850F7C8009B12AD /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AD1D2C691897538900752339 /* CLGPUImageVignetteFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLGPUImageVignetteFilter.h; path = CLGPUImageFilters/CLGPUImageVignetteFilter.h; sourceTree = "<group>"; };
 		AD1D2C6A1897538900752339 /* CLGPUImageVignetteFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLGPUImageVignetteFilter.m; path = CLGPUImageFilters/CLGPUImageVignetteFilter.m; sourceTree = "<group>"; };
@@ -195,6 +201,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F26F2A624284B8F00F57F11 /* CLMosaicTool */ = {
+			isa = PBXGroup;
+			children = (
+				4F26F2A824284BC100F57F11 /* CLMosaicTool.h */,
+				4F26F2A924284BC100F57F11 /* CLMosaicTool.m */,
+				4F26F2AB24284FEE00F57F11 /* CLMosaicView.h */,
+				4F26F2AC24284FEE00F57F11 /* CLMosaicView.m */,
+			);
+			path = CLMosaicTool;
+			sourceTree = "<group>";
+		};
 		AD1D2C681897532100752339 /* CLGPUImageFilters */ = {
 			isa = PBXGroup;
 			children = (
@@ -397,6 +414,7 @@
 		AD5A032C1897528000347C57 /* OptionalImageTools */ = {
 			isa = PBXGroup;
 			children = (
+				4F26F2A624284B8F00F57F11 /* CLMosaicTool */,
 				AD359C2F1954FB2200B763CF /* CLSplashTool */,
 				AD29BB5A18EA471A0084D3D6 /* CLEmoticonTool */,
 				AD1D2C681897532100752339 /* CLGPUImageFilters */,
@@ -540,12 +558,18 @@
 			attributes = {
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = CALACULU;
+				TargetAttributes = {
+					AD5C1DFF18350DC400790989 = {
+						DevelopmentTeam = 3JZ5FTDGK8;
+					};
+				};
 			};
 			buildConfigurationList = AD5C1DFB18350DC400790989 /* Build configuration list for PBXProject "CLImageEditorDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 				ja,
@@ -614,8 +638,10 @@
 				AD5A03561897528000347C57 /* CLColorPickerView.m in Sources */,
 				AD5A03691897528000347C57 /* CLTextTool.m in Sources */,
 				AD5A035D1897528000347C57 /* UIDevice+SystemVersion.m in Sources */,
+				4F26F2AA24284BC100F57F11 /* CLMosaicTool.m in Sources */,
 				AD7B1DBA19546130007C3BBC /* CLDrawTool.m in Sources */,
 				AD359C321954FB4D00B763CF /* CLSplashTool.m in Sources */,
+				4F26F2AD24284FEE00F57F11 /* CLMosaicView.m in Sources */,
 				AD5A03681897528000347C57 /* CLTextSettingView.m in Sources */,
 				AD5A03591897528000347C57 /* CLToolbarMenuItem.m in Sources */,
 				AD5A03541897528000347C57 /* CLToneCurveTool.m in Sources */,
@@ -753,6 +779,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 3JZ5FTDGK8;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CLImageEditorDemo/CLImageEditorDemo-Prefix.pch";
 				INFOPLIST_FILE = "CLImageEditorDemo/CLImageEditorDemo-Info.plist";
@@ -769,6 +796,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 3JZ5FTDGK8;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CLImageEditorDemo/CLImageEditorDemo-Prefix.pch";
 				INFOPLIST_FILE = "CLImageEditorDemo/CLImageEditorDemo-Info.plist";

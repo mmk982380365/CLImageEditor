@@ -1,4 +1,4 @@
-﻿/* No comment provided by engineer. */
+/* No comment provided by engineer. */
 "CLAdjustmentTool_DefaultTitle" = "ajustement";
 
 /* No comment provided by engineer. */
@@ -163,5 +163,6 @@
 /* No comment provided by engineer. */
 "CLToneCurveTool_DefaultTitle" = "ToneCurve";
 
-
+/* No comment provided by engineer. */
+"CLMosaicTool_DefaultTitle" = "Mosaïque";
 /* French Translation By : @iMokhles . */

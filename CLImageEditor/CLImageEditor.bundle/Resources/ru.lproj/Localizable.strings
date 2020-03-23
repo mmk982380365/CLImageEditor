@@ -1,4 +1,4 @@
-﻿/* No comment provided by engineer. */
+/* No comment provided by engineer. */
 "CLFilterTool_DefaultTitle" = "Фильтры";
 
 /* No comment provided by engineer. */
@@ -160,7 +160,8 @@
 /* No comment provided by engineer. */
 "CLTextTool_MenuItemNew" = "Новый";
 
-
+/* No comment provided by engineer. */
+"CLMosaicTool_DefaultTitle" = "мозаика";
 
 
 

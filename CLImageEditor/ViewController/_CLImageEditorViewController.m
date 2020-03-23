@@ -35,6 +35,24 @@ static const CGFloat kMenuBarHeight = 80.0f;
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.toolInfo = [CLImageToolInfo toolInfoForToolClass:[self class]];
+        self.modalPresentationStyle = UIModalPresentationFullScreen;
+        
+        NSArray *disabledTools = @[
+          @"CLToneCurveTool",
+          @"CLHueEffect",
+          @"CLStickerTool",
+          @"CLFilterTool",
+          @"CLResizeTool",
+          @"CLEmoticonTool",
+          @"CLBlurTool",
+          @"CLEffectTool",
+          @"CLSplashTool"
+        ];
+        for (NSString *tool in disabledTools) {
+            CLImageToolInfo *tools = [self.toolInfo subToolInfoWithToolName:tool recursive:YES];
+            tools.available = NO;
+        }
+        
     }
     return self;
 }
